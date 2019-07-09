@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./palette/main.css">
+  <script  src="./palette/jquery-3.4.0.js"></script>
+  <script  src="./palette/index.js"></script>
+  
+  <title>pallet</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__menu">
+
+    </div>
+    <div class="header__h1">
+      <h1 class="header__h1-h1">animation-player</h1>
+    </div>
+    <div class="header__dopMenu"></div>
+  </header>
+  <main class="main">
+    <nav class="toolbar">
+      <div class="toolbar__tool">
+        <div class="toolbar__tool-top">
+          <div class="toolbar__tool-item" id="tool-paint"><span class="toolbar__tool--paint"></span></div>
+          <div class="toolbar__tool-item"  id="tool-color"><span class="toolbar__tool--choose"></span></div>
+        </div>
+        <div class="toolbar__tool-bottom">
+            <div class="toolbar__tool-item"  id="tool-move"><span class="toolbar__tool--move"></span></div>
+            <div class="toolbar__tool-item"  id="tool-transform"><span class="toolbar__tool--transform"></span></div>
+        </div>
+      </div>
+      <div class="toolbar__color">
+          <div class="toolbar__color-top">
+              <div class="toolbar__color-item"><span class="color" id="currentcolor"></span><span class="toolbar__color--color"></span></div>
+              <div class="toolbar__color-item" ><span class="color" id="prewcolor"></span><span class="toolbar__color--prew"></span></div>
+          </div>
+          <div class="toolbar__color-bottom">
+              <div class="toolbar__color-item"><span class="color red"></span><span class="toolbar__color--red"></span></div>
+              <div class="toolbar__color-item"><span class="color blue"></span><span class="toolbar__color--blue"></span></div>
+          </div>
+      </div>
+    </nav>
+    <section class="frametools">
+      <div class="frametools__listframes" id="frames">
+        <div class="frame" id='frame0'>
+          <div class="frame_element fugure0"></div>
+          <div class="frame_element fugure1"></div>
+          <div class="frame_element fugure2"></div>
+          <div class="frame_element fugure3"></div>
+          <div class="frame_element fugure4"></div>
+          <div class="frame_element fugure5"></div>
+          <div class="frame_element fugure6"></div>
+          <div class="frame_element fugure7"></div>
+          <div class="frame_element fugure8"></div>
+          <div class="frame_tool frame_id"></div>
+          <div class="frame_tool frame_delete"></div>
+          <div class="frame_tool frame_move">
+            <i class="fas fa-arrows-alt"></i>
+          </div>
+          <div class="frame_tool frame_copy"></div>
+        </div>
+        <div class="frame" id='frame1'>
+          <div class="frame_element fugure0"></div>
+          <div class="frame_element fugure1"></div>
+          <div class="frame_element fugure2"></div>
+          <div class="frame_element fugure3"></div>
+          <div class="frame_element fugure4"></div>
+          <div class="frame_element fugure5"></div>
+          <div class="frame_element fugure6"></div>
+          <div class="frame_element fugure7"></div>
+          <div class="frame_element fugure8"></div>
+          <div class="frame_tool frame_id"></div>
+          <div class="frame_tool frame_delete"></div>
+          <div class="frame_tool frame_move">
+            <i class="fas fa-arrows-alt"></i>
+          </div>
+          <div class="frame_tool frame_copy"></div>
+        </div>
+      </div>
+      <div class="frametools__addnewbtn"></div>
+    </section>
+    <section class="canvas" id="canvas1">
+      <!-- <div class="canvas__row"> -->
+        <div class="canvas__item"><div class="square" id="fugure0"></div></div>
+        <div class="canvas__item"><div class="square" id="fugure1"></div></div>
+        <div class="canvas__item"><div class="square" id="fugure2"></div></div>
+      <!-- </div> -->
+      <!-- <div class="canvas__row"> -->
+          <div class="canvas__item"><div class="square" id="fugure3"></div></div>
+          <div class="canvas__item"><div class="square" id="fugure4"></div></div>
+          <div class="canvas__item"><div class="square" id="fugure5"></div></div>
+        <!-- </div> -->
+        <!-- <div class="canvas__row"> -->
+          <div class="canvas__item"><div class="triangle" id="fugure6"></div></div>  
+          <div class="canvas__item"><div class="square" id="fugure7"></div></div>
+          <div class="canvas__item"><div class="square" id="fugure8"></div></div>
+          <!-- </div> -->
+    </section>
+
+    <section class="previewtools">
+      <div class="previewtools__frame"></div>
+      <div class="previewtools__fps"></div>
+    </section>
+  </main>
+  
+</body>
+</html>

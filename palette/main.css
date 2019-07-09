@@ -1,0 +1,267 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header{
+  
+  width: 100%;
+  height: 48px;
+  padding-top: 6px;
+box-shadow: 0 4px rgba(0,0,0,0.24);
+}
+.header__menu:hover, .header__dopMenu:hover{
+  cursor: pointer;
+}
+.header__menu{
+  display:inline-block;
+  width: 24px;
+  height: 34px;
+    margin-left: 16px;
+   background-image: url("../assets/img/navicon.png");
+   
+}
+
+.header__h1{
+  display:inline-block;
+  margin-left: 20px;
+
+}
+.header__h1-h1{
+  position: relative;
+  font-size: 20px;
+  top:-7px;
+}
+.header__dopMenu{
+  float:right;
+  margin-right:10px;
+  width: 24px;
+  height: 34px;
+  background-image: url("../assets/img/3dot.png");
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+}
+
+.main{
+  width:100%;
+  height: 600px;
+  margin-top: 79px;
+  
+}
+
+.toolbar{
+  float:left;
+  margin-left: 29px;
+}
+
+.toolbar__tool, .toolbar__color{
+  width: 60px;
+  height: 246px;
+  border:solid .5px;
+  }
+
+.toolbar__color{
+  margin-top: 79px;
+}
+
+.toolbar__tool-top, .toolbar__tool-bottom, .toolbar__color-top, .toolbar__color-bottom{
+  position: relative;
+  width:100%;
+  height: 123px;
+  
+}
+
+.toolbar__tool-top, .toolbar__color-top{
+  border-bottom: solid grey .2px;
+}
+.toolbar__tool-item, .toolbar__color-item{
+  width: 100%;
+  height: 61.5px;
+  padding-top:20px;
+  padding-left:60px;
+  
+}
+
+.toolbar__tool-item:hover, {
+  cursor: pointer;
+  background-color: rgba(238, 238, 91, 0.733);
+}
+
+.toolbar__tool-paint{
+  
+}
+
+.toolbar__tool--paint::before, .toolbar__tool--choose::before, .toolbar__tool--move:before, .toolbar__tool--transform::before {
+  content:"";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  background-repeat: no-repeat; 
+}
+
+
+
+.toolbar__tool--paint::before{
+  background-image: url("../assets/img/bucket.png");
+}
+
+.toolbar__tool--choose::before{
+  background-image: url("../assets/img/pipka.png");
+
+}
+
+.toolbar__tool--move:before{
+  background-image: url("../assets/img/move.png");
+}
+
+.toolbar__tool--transform::before{
+  background-image: url("../assets/img/transform.png");
+}
+
+.color, .blue, .red  {
+  position: absolute;
+  border: solid .5px;
+  border-radius: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  background-repeat: no-repeat; 
+}
+
+.currentcolor:hover, .prewcolor:hover, .blue:hover, .red:hover{
+  cursor: pointer;
+}
+
+#currentcolor{
+  background-color: yellow; //#C4C4C4;
+  }
+  #prewcolor{
+   background-color:#41F795;
+  }
+  .red{
+    background-color:#F74141;
+  }
+  .blue{
+    background-color:#41B6F7;
+  }
+
+.frametools,
+.previewtools{
+  position: absolute;
+  
+  border:solid;
+  width:200px;
+  min-height: 600px;
+}
+
+.frametools{
+  left: 150px;
+}
+.previewtools{
+  left: 1100px;
+}
+
+
+.canvas{
+  position: absolute;
+  left: 450px;
+  width:600px;
+  height: 600px;
+  margin-right: 40px;
+
+}
+
+.canvas__item{
+  
+  width:200px;
+  height: 200px;
+  float:left;
+
+}
+
+.canvas__item:hover{
+  cursor: pointer;  
+}
+
+.square, .triangle{
+ 
+  width: 198px;
+  height: 198px;
+  padding:2px;
+  background-color: rgb(196, 196, 196);
+}
+
+.triangle{
+  border-radius: 50%;
+}
+
+
+.frame {
+  
+  
+  width: 140px;
+  height: 140px;
+  box-sizing: border-box;
+  border: 0.2vw solid yellow;
+  position: relative;
+  margin: 0 auto;
+  
+  padding: 17px;
+  padding-left: 17px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1vw;
+}
+
+.frame_active {
+  box-shadow: 0vw 0vw 1vw rgb(217, 230, 173);
+  background-color: rgba(255, 255, 0, 0.171);
+}
+
+.frame_element {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin:1px;
+
+  background-color: rgb(204, 204, 204);
+  
+}
+
+.frame_tool {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 0, 0.746);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame_delete {
+  left: 80%;
+}
+
+.frame_move {
+  top: 80%;
+}
+
+.frame_copy {
+  left: 80%;
+  top: 80%;
+}
+
+.frame_tool i {
+  font-size: 1.3vw;
+}
